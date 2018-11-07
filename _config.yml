@@ -12,6 +12,7 @@ url: "www.jayntash.moe." # the base hostname & protocol for your site
 
 social:
   github: https://github.com/asciicat/wedding-site
+  instagram: https://www.instagram.com/explore/tags/JayNTashWedding2019/
 
 # Build settings
 markdown: kramdown
