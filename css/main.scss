@@ -1919,3 +1919,11 @@ blockquote a:hover{
 blockquote em{
   font-style: italic;
 }
+
+.wrapper.style3 input[type="text"], .wrapper.style3 input[type="password"],
+.wrapper.style3 input[type="email"], .wrapper.style3 select,
+.wrapper.style3 textarea {
+    background: #eee !important;
+    border: #ccc 1px solid;
+    margin: 1% !important;
+}
