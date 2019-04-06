@@ -109,9 +109,14 @@ $(function(e){
 			url: url,
 			method: "GET",
 			dataType: "json",
-			data: $form.serializeObject()
-		}).success(
-			// do something
-		);
+			data: $form.serializeObject(),
+			success: function(result){
+				Swal.fire(
+				  'Success!',
+				  'Your response has been captured',
+				  'success'
+				)
+			}
+		})
 	})
 });
