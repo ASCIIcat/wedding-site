@@ -2,13 +2,18 @@
   <header class="major">
     <h2>RSVP</h2>
 
-	<form method="POST" action="https://formspree.io/asciicatdesigns@gmail.com">
-	  <input type="text" name="name" placeholder="Your name" style="background: #8f5cb6"/>
-	  <input style="background: #8f5cb6; margin-top: 4px" type="text" name="email" placeholder="Your email"/>
-	  <textarea name="message" placeholder="Let us know if you can come and who's coming!" style="background: #8f5cb6; margin-top: 4px"></textarea>
+	<form id="rsvp-form">
+	  <input type="text" name="name" placeholder="Your name"/>
+	  <input type="text" name="email" placeholder="Your email"/>
+    <select name="attending">
+      <option value="" disabled selected>Will you be attending?</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+	  <textarea name="message" placeholder="Leave us a message as well as who's coming!" ></textarea>
 	  <input type="text" name="_gotcha" style="display:none"/>
 	  <br>
-	  <button type="submit" style="background: #8f5cb6">RSVP</button>
+	  <button type="submit">RSVP</button>
 	</form>
   </header>
 </div>
