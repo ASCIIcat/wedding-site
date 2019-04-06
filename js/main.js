@@ -97,20 +97,21 @@
 
 	});
 
+})(jQuery);
 
+$(function(e){
 	var $form = $('form#rsvp-form'),
-	    url = 'https://script.google.com/macros/s/AKfycbz8gP4VWhegJK5nw2ZE7yADwiGgRX4bPXpiOVO4aq8gl13aqMA/exec'
+			url = 'https://script.google.com/macros/s/AKfycbz8gP4VWhegJK5nw2ZE7yADwiGgRX4bPXpiOVO4aq8gl13aqMA/exec'
 
 	$('#submit-form').on('click', function(e) {
-	  e.preventDefault();
-	  var jqxhr = $.ajax({
-	    url: url,
-	    method: "GET",
-	    dataType: "json",
-	    data: $form.serializeObject()
-	  }).success(
-	    // do something
-	  );
+		e.preventDefault();
+		var jqxhr = $.ajax({
+			url: url,
+			method: "GET",
+			dataType: "json",
+			data: $form.serializeObject()
+		}).success(
+			// do something
+		);
 	})
-
-})(jQuery);
+});
