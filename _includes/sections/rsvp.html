@@ -3,14 +3,14 @@
     <h2>RSVP</h2>
 
 	<form id="rsvp-form">
-	  <input type="text" name="name" placeholder="Your name"/>
-	  <input type="text" name="email" placeholder="Your email"/>
-    <select name="attending">
+	  <input type="text" name="name" placeholder="Your name" required/>
+	  <input type="text" name="email" placeholder="Your email" required/>
+    <select name="attending" required>
       <option value="" disabled selected>Will you be attending?</option>
       <option value="yes">Yes</option>
       <option value="no">No</option>
     </select>
-	  <textarea name="message" placeholder="Leave us a message as well as who's coming!" ></textarea>
+	  <textarea name="message" placeholder="Leave us a message as well as who's coming!" required></textarea>
 	  <br>
 	  <button type="submit" id="submit-form">RSVP</button>
 	</form>
